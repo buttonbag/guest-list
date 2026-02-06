@@ -4,6 +4,15 @@ export default function GuestList({list, setCurrentGuest}) {
       <>
         <h1>Guestlist</h1>
         <table>
+
+            <thead>
+            <tr>
+              <th>NAME</th>
+              <th>EMAIL</th>
+              <th>PHONE</th>
+            </tr>
+            </thead>
+
           {list.map( (item) => (
             <tr key={item.name} onClick={()=> setCurrentGuest(item) }>
               <td>

@@ -1,0 +1,60 @@
+html, body {
+  font-size: 16px;
+  background: #ddd;
+  display: flex;
+  margin: 0 auto;
+}
+
+table {
+  background: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  border: 1rem solid white;
+}
+table thead {
+  background: #333;
+  color: white;
+}
+table thead tr th {
+  padding: 0.8rem;
+  height: 1.2rem;
+}
+table tr td {
+  height: 1rem;
+  padding: 1rem;
+}
+table tr:nth-child(2n) {
+  background: #eee;
+}
+table tr:hover {
+  background: rgb(255, 66, 135);
+}
+
+.guest-details {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2078431373);
+}
+.guest-details .name, .guest-details .email, .guest-details .phone {
+  padding: 1.2rem 0;
+  margin: 0;
+}
+.guest-details .name {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.guest-details button {
+  font-size: 1.2rem;
+  background: rgb(255, 66, 135);
+  padding: 1.2rem;
+  margin-top: 2rem;
+  border: none;
+}
+
+/*# sourceMappingURL=index.css.map */

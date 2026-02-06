@@ -4,11 +4,14 @@ export default function GuestItem({currentGuest, setCurrentGuest}) {
     // }  
 
     return (
-      <div>
-        <p>{currentGuest.name}</p>
-        <p>{currentGuest.email}</p>
-        <p>{currentGuest.phone}</p>
+      <>
+        <h1>Guest Details</h1>
+      <div className="guest-details">
+        <p className="name">{currentGuest.name}</p>
+        <p className="email">{currentGuest.email}</p>
+        <p className="phone">{currentGuest.phone}</p>
         <button onClick={()=>setCurrentGuest()}>back</button>
       </div>
+      </>
     )
   }

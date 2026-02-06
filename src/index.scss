@@ -1,0 +1,67 @@
+html, body {
+  font-size: 16px;
+  background: #ddd;
+  display: flex;
+  margin: 0 auto;
+}
+
+table {
+  background: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  border: 1rem solid white;
+  
+  thead {
+    background: #333;
+    color: white;
+    tr th {
+      padding: .8rem;
+      height: 1.2rem;
+    }
+  }
+
+  tr {
+    td {
+      height: 1rem;
+      padding: 1rem;
+      // border: 1px solid black;
+    }
+    &:nth-child(2n) {
+      background: #eee;
+    }
+    &:hover {
+      background: rgb(255, 66, 135);
+    }
+  }
+}
+
+
+.guest-details {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 .5rem .5rem #00000035;
+
+  .name, .email, .phone {
+    padding: 1.2rem 0;
+    margin: 0;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    background: rgb(255, 66, 135);
+    padding: 1.2rem;
+    margin-top: 2rem;
+    border: none;
+  }
+}
